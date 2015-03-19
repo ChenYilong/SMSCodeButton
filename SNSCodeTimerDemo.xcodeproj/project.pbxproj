@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AB7BCF51A2233D4001FBE3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB7BCF41A2233D4001FBE3E /* Foundation.framework */; };
+		9AB7BCF71A2233D4001FBE3E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB7BCF61A2233D4001FBE3E /* CoreGraphics.framework */; };
+		9AB7BCF91A2233D4001FBE3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB7BCF81A2233D4001FBE3E /* UIKit.framework */; };
+		9AB7BCFF1A2233D4001FBE3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AB7BCFD1A2233D4001FBE3E /* InfoPlist.strings */; };
+		9AB7BD011A2233D4001FBE3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7BD001A2233D4001FBE3E /* main.m */; };
+		9AB7BD051A2233D4001FBE3E /* CYLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7BD041A2233D4001FBE3E /* CYLAppDelegate.m */; };
+		9AB7BD071A2233D4001FBE3E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB7BD061A2233D4001FBE3E /* Images.xcassets */; };
+		9AB7BD0E1A2233D4001FBE3E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB7BD0D1A2233D4001FBE3E /* XCTest.framework */; };
+		9AB7BD0F1A2233D4001FBE3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB7BCF41A2233D4001FBE3E /* Foundation.framework */; };
+		9AB7BD101A2233D4001FBE3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB7BCF81A2233D4001FBE3E /* UIKit.framework */; };
+		9AB7BD181A2233D4001FBE3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AB7BD161A2233D4001FBE3E /* InfoPlist.strings */; };
+		9AB7BD1A1A2233D4001FBE3E /* SNSCodeTimerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7BD191A2233D4001FBE3E /* SNSCodeTimerDemoTests.m */; };
+		9AB7BD251A2233F4001FBE3E /* CYLSNSCodeButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7BD241A2233F4001FBE3E /* CYLSNSCodeButtonViewController.m */; };
+		9AB7BD281A2235E6001FBE3E /* UIImage+ResizeImg.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7BD271A2235E6001FBE3E /* UIImage+ResizeImg.m */; };
+		9AB7BD2E1A223E65001FBE3E /* SNSCodeCountdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7BD2D1A223E65001FBE3E /* SNSCodeCountdownButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AB7BD111A2233D4001FBE3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AB7BCE91A2233D4001FBE3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AB7BCF01A2233D4001FBE3E;
+			remoteInfo = SNSCodeTimerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9AB7BCF11A2233D4001FBE3E /* SNSCodeTimerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNSCodeTimerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB7BCF41A2233D4001FBE3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9AB7BCF61A2233D4001FBE3E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9AB7BCF81A2233D4001FBE3E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9AB7BCFC1A2233D4001FBE3E /* SNSCodeTimerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SNSCodeTimerDemo-Info.plist"; sourceTree = "<group>"; };
+		9AB7BCFE1A2233D4001FBE3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9AB7BD001A2233D4001FBE3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9AB7BD021A2233D4001FBE3E /* SNSCodeTimerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SNSCodeTimerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		9AB7BD031A2233D4001FBE3E /* CYLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLAppDelegate.h; sourceTree = "<group>"; };
+		9AB7BD041A2233D4001FBE3E /* CYLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLAppDelegate.m; sourceTree = "<group>"; };
+		9AB7BD061A2233D4001FBE3E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9AB7BD0C1A2233D4001FBE3E /* SNSCodeTimerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNSCodeTimerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB7BD0D1A2233D4001FBE3E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9AB7BD151A2233D4001FBE3E /* SNSCodeTimerDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SNSCodeTimerDemoTests-Info.plist"; sourceTree = "<group>"; };
+		9AB7BD171A2233D4001FBE3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9AB7BD191A2233D4001FBE3E /* SNSCodeTimerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNSCodeTimerDemoTests.m; sourceTree = "<group>"; };
+		9AB7BD231A2233F4001FBE3E /* CYLSNSCodeButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLSNSCodeButtonViewController.h; sourceTree = "<group>"; };
+		9AB7BD241A2233F4001FBE3E /* CYLSNSCodeButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLSNSCodeButtonViewController.m; sourceTree = "<group>"; };
+		9AB7BD261A2235E6001FBE3E /* UIImage+ResizeImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeImg.h"; sourceTree = "<group>"; };
+		9AB7BD271A2235E6001FBE3E /* UIImage+ResizeImg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeImg.m"; sourceTree = "<group>"; };
+		9AB7BD2C1A223E65001FBE3E /* SNSCodeCountdownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSCodeCountdownButton.h; sourceTree = "<group>"; };
+		9AB7BD2D1A223E65001FBE3E /* SNSCodeCountdownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSCodeCountdownButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AB7BCEE1A2233D4001FBE3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB7BCF71A2233D4001FBE3E /* CoreGraphics.framework in Frameworks */,
+				9AB7BCF91A2233D4001FBE3E /* UIKit.framework in Frameworks */,
+				9AB7BCF51A2233D4001FBE3E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AB7BD091A2233D4001FBE3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB7BD0E1A2233D4001FBE3E /* XCTest.framework in Frameworks */,
+				9AB7BD101A2233D4001FBE3E /* UIKit.framework in Frameworks */,
+				9AB7BD0F1A2233D4001FBE3E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AB7BCE81A2233D4001FBE3E = {
+			isa = PBXGroup;
+			children = (
+				9AB7BCFA1A2233D4001FBE3E /* SNSCodeTimerDemo */,
+				9AB7BD131A2233D4001FBE3E /* SNSCodeTimerDemoTests */,
+				9AB7BCF31A2233D4001FBE3E /* Frameworks */,
+				9AB7BCF21A2233D4001FBE3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AB7BCF21A2233D4001FBE3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AB7BCF11A2233D4001FBE3E /* SNSCodeTimerDemo.app */,
+				9AB7BD0C1A2233D4001FBE3E /* SNSCodeTimerDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AB7BCF31A2233D4001FBE3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AB7BCF41A2233D4001FBE3E /* Foundation.framework */,
+				9AB7BCF61A2233D4001FBE3E /* CoreGraphics.framework */,
+				9AB7BCF81A2233D4001FBE3E /* UIKit.framework */,
+				9AB7BD0D1A2233D4001FBE3E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AB7BCFA1A2233D4001FBE3E /* SNSCodeTimerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9AB7BD031A2233D4001FBE3E /* CYLAppDelegate.h */,
+				9AB7BD041A2233D4001FBE3E /* CYLAppDelegate.m */,
+				9AB7BD231A2233F4001FBE3E /* CYLSNSCodeButtonViewController.h */,
+				9AB7BD241A2233F4001FBE3E /* CYLSNSCodeButtonViewController.m */,
+				9AB7BD2C1A223E65001FBE3E /* SNSCodeCountdownButton.h */,
+				9AB7BD2D1A223E65001FBE3E /* SNSCodeCountdownButton.m */,
+				9AB7BD261A2235E6001FBE3E /* UIImage+ResizeImg.h */,
+				9AB7BD271A2235E6001FBE3E /* UIImage+ResizeImg.m */,
+				9AB7BD061A2233D4001FBE3E /* Images.xcassets */,
+				9AB7BCFB1A2233D4001FBE3E /* Supporting Files */,
+			);
+			path = SNSCodeTimerDemo;
+			sourceTree = "<group>";
+		};
+		9AB7BCFB1A2233D4001FBE3E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AB7BCFC1A2233D4001FBE3E /* SNSCodeTimerDemo-Info.plist */,
+				9AB7BCFD1A2233D4001FBE3E /* InfoPlist.strings */,
+				9AB7BD001A2233D4001FBE3E /* main.m */,
+				9AB7BD021A2233D4001FBE3E /* SNSCodeTimerDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AB7BD131A2233D4001FBE3E /* SNSCodeTimerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AB7BD191A2233D4001FBE3E /* SNSCodeTimerDemoTests.m */,
+				9AB7BD141A2233D4001FBE3E /* Supporting Files */,
+			);
+			path = SNSCodeTimerDemoTests;
+			sourceTree = "<group>";
+		};
+		9AB7BD141A2233D4001FBE3E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AB7BD151A2233D4001FBE3E /* SNSCodeTimerDemoTests-Info.plist */,
+				9AB7BD161A2233D4001FBE3E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AB7BCF01A2233D4001FBE3E /* SNSCodeTimerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AB7BD1D1A2233D4001FBE3E /* Build configuration list for PBXNativeTarget "SNSCodeTimerDemo" */;
+			buildPhases = (
+				9AB7BCED1A2233D4001FBE3E /* Sources */,
+				9AB7BCEE1A2233D4001FBE3E /* Frameworks */,
+				9AB7BCEF1A2233D4001FBE3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SNSCodeTimerDemo;
+			productName = SNSCodeTimerDemo;
+			productReference = 9AB7BCF11A2233D4001FBE3E /* SNSCodeTimerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9AB7BD0B1A2233D4001FBE3E /* SNSCodeTimerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AB7BD201A2233D4001FBE3E /* Build configuration list for PBXNativeTarget "SNSCodeTimerDemoTests" */;
+			buildPhases = (
+				9AB7BD081A2233D4001FBE3E /* Sources */,
+				9AB7BD091A2233D4001FBE3E /* Frameworks */,
+				9AB7BD0A1A2233D4001FBE3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AB7BD121A2233D4001FBE3E /* PBXTargetDependency */,
+			);
+			name = SNSCodeTimerDemoTests;
+			productName = SNSCodeTimerDemoTests;
+			productReference = 9AB7BD0C1A2233D4001FBE3E /* SNSCodeTimerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AB7BCE91A2233D4001FBE3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CYL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					9AB7BD0B1A2233D4001FBE3E = {
+						TestTargetID = 9AB7BCF01A2233D4001FBE3E;
+					};
+				};
+			};
+			buildConfigurationList = 9AB7BCEC1A2233D4001FBE3E /* Build configuration list for PBXProject "SNSCodeTimerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9AB7BCE81A2233D4001FBE3E;
+			productRefGroup = 9AB7BCF21A2233D4001FBE3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AB7BCF01A2233D4001FBE3E /* SNSCodeTimerDemo */,
+				9AB7BD0B1A2233D4001FBE3E /* SNSCodeTimerDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AB7BCEF1A2233D4001FBE3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB7BCFF1A2233D4001FBE3E /* InfoPlist.strings in Resources */,
+				9AB7BD071A2233D4001FBE3E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AB7BD0A1A2233D4001FBE3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB7BD181A2233D4001FBE3E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AB7BCED1A2233D4001FBE3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB7BD011A2233D4001FBE3E /* main.m in Sources */,
+				9AB7BD051A2233D4001FBE3E /* CYLAppDelegate.m in Sources */,
+				9AB7BD251A2233F4001FBE3E /* CYLSNSCodeButtonViewController.m in Sources */,
+				9AB7BD2E1A223E65001FBE3E /* SNSCodeCountdownButton.m in Sources */,
+				9AB7BD281A2235E6001FBE3E /* UIImage+ResizeImg.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AB7BD081A2233D4001FBE3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB7BD1A1A2233D4001FBE3E /* SNSCodeTimerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AB7BD121A2233D4001FBE3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AB7BCF01A2233D4001FBE3E /* SNSCodeTimerDemo */;
+			targetProxy = 9AB7BD111A2233D4001FBE3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9AB7BCFD1A2233D4001FBE3E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AB7BCFE1A2233D4001FBE3E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9AB7BD161A2233D4001FBE3E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AB7BD171A2233D4001FBE3E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AB7BD1B1A2233D4001FBE3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AB7BD1C1A2233D4001FBE3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AB7BD1E1A2233D4001FBE3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SNSCodeTimerDemo/SNSCodeTimerDemo-Prefix.pch";
+				INFOPLIST_FILE = "SNSCodeTimerDemo/SNSCodeTimerDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9AB7BD1F1A2233D4001FBE3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SNSCodeTimerDemo/SNSCodeTimerDemo-Prefix.pch";
+				INFOPLIST_FILE = "SNSCodeTimerDemo/SNSCodeTimerDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9AB7BD211A2233D4001FBE3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SNSCodeTimerDemo.app/SNSCodeTimerDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SNSCodeTimerDemo/SNSCodeTimerDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SNSCodeTimerDemoTests/SNSCodeTimerDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9AB7BD221A2233D4001FBE3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SNSCodeTimerDemo.app/SNSCodeTimerDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SNSCodeTimerDemo/SNSCodeTimerDemo-Prefix.pch";
+				INFOPLIST_FILE = "SNSCodeTimerDemoTests/SNSCodeTimerDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AB7BCEC1A2233D4001FBE3E /* Build configuration list for PBXProject "SNSCodeTimerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB7BD1B1A2233D4001FBE3E /* Debug */,
+				9AB7BD1C1A2233D4001FBE3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AB7BD1D1A2233D4001FBE3E /* Build configuration list for PBXNativeTarget "SNSCodeTimerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB7BD1E1A2233D4001FBE3E /* Debug */,
+				9AB7BD1F1A2233D4001FBE3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9AB7BD201A2233D4001FBE3E /* Build configuration list for PBXNativeTarget "SNSCodeTimerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB7BD211A2233D4001FBE3E /* Debug */,
+				9AB7BD221A2233D4001FBE3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AB7BCE91A2233D4001FBE3E /* Project object */;
+}
