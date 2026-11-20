@@ -1,0 +1,20 @@
+# Versions of the Android example, in one place; the names the cylanimateditem module uses are the same as in CYLTabBarController's.
+# Android 示例的版本号，集中在此；cylanimateditem 模块用到的名称与 CYLTabBarController 的相同。
+[versions]
+agp = "8.7.3"
+kotlin = "2.0.21"
+appcompat = "1.7.0"
+robolectric = "4.14.1"
+junit = "4.13.2"
+androidx-test-core = "1.6.1"
+
+[libraries]
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
+junit = { module = "junit:junit", version.ref = "junit" }
+androidx-test-core = { module = "androidx.test:core", version.ref = "androidx-test-core" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

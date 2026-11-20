@@ -1,0 +1,11 @@
+{
+  "name": "smscodebutton-miniprogram-example",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The WeChat Mini Program example of SMSCodeButton: cyl-animated-item in its countdown style.",
+  "license": "MIT",
+  "scripts": {
+    "setup": "bash ../scripts/sync-cyl-components.sh",
+    "test": "node --test test/*.test.js"
+  }
+}

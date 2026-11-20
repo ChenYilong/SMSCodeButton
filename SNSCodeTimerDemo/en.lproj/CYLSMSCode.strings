@@ -1,0 +1,5 @@
+/* [EN] English texts of the demo. The key is the original Chinese text. [CN] 示例的英文文本。key 是中文原文。 */
+"获取验证码" = "Get code";
+"还剩%ld秒" = "%ld s left";
+"重新获取" = "Resend";
+"发送验证码" = "Sending the code";

@@ -1,0 +1,11 @@
+{
+  "name": "entry",
+  "version": "1.0.0",
+  "description": "The SMSCodeButton example: one Get code button, the countdown style of CYLAnimatedItemView.",
+  "main": "",
+  "author": "ChenYilong",
+  "license": "MIT",
+  "dependencies": {
+    "cylanimateditem": "file:../cylanimateditem"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "description": "SMSCodeButton: a countdown button for SMS codes, the countdown style of cyl-animated-item.",
+  "miniprogramRoot": "miniprogram/",
+  "compileType": "miniprogram",
+  "setting": {
+    "es6": true,
+    "enhance": true,
+    "minified": false,
+    "urlCheck": false
+  },
+  "appid": "touristappid",
+  "projectname": "SMSCodeButton",
+  "condition": {}
+}

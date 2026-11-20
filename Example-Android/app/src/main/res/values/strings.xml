@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- [EN] English texts of the example; the key names follow the Chinese originals of the iOS table CYLSMSCode. [CN] 示例的英文文本；key 对应 iOS 表 CYLSMSCode 的中文原文。 -->
+<resources>
+    <string name="app_name">SMSCodeButton</string>
+    <string name="cyl_sms_get_code">Get code</string>
+    <string name="cyl_sms_seconds_left">%d s left</string>
+    <string name="cyl_sms_resend">Resend</string>
+    <string name="cyl_sms_sending_code">Sending the code</string>
+</resources>

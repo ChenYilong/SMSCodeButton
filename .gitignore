@@ -1,0 +1,22 @@
+# macOS AppleDouble files and Finder metadata
+._*
+.DS_Store
+# CocoaPods: the sources are fetched by `pod install`; lock files are never committed
+Pods/
+*.lock
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+# Components fetched at the pinned commit (scripts/sync-cyl-components.sh)
+.cyl-components/
+Example-HarmonyOS/cylanimateditem/
+Example-MiniProgram/miniprogram/cyl/
+# Android, HarmonyOS, mini program build output
+.gradle/
+local.properties
+Example-Android/**/build/
+oh_modules/
+.hvigor/
+Example-HarmonyOS/**/build/
+node_modules/

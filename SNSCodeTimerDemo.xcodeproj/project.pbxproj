@@ -11,17 +11,18 @@
 		9AB7BCF71A2233D4001FBE3E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB7BCF61A2233D4001FBE3E /* CoreGraphics.framework */; };
 		9AB7BCF91A2233D4001FBE3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB7BCF81A2233D4001FBE3E /* UIKit.framework */; };
 		9AB7BCFF1A2233D4001FBE3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AB7BCFD1A2233D4001FBE3E /* InfoPlist.strings */; };
-		9AB7BD011A2233D4001FBE3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7BD001A2233D4001FBE3E /* main.m */; };
-		9AB7BD051A2233D4001FBE3E /* CYLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7BD041A2233D4001FBE3E /* CYLAppDelegate.m */; };
 		9AB7BD071A2233D4001FBE3E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB7BD061A2233D4001FBE3E /* Images.xcassets */; };
 		9AB7BD0E1A2233D4001FBE3E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB7BD0D1A2233D4001FBE3E /* XCTest.framework */; };
 		9AB7BD0F1A2233D4001FBE3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB7BCF41A2233D4001FBE3E /* Foundation.framework */; };
 		9AB7BD101A2233D4001FBE3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB7BCF81A2233D4001FBE3E /* UIKit.framework */; };
 		9AB7BD181A2233D4001FBE3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AB7BD161A2233D4001FBE3E /* InfoPlist.strings */; };
-		9AB7BD1A1A2233D4001FBE3E /* SNSCodeTimerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7BD191A2233D4001FBE3E /* SNSCodeTimerDemoTests.m */; };
-		9AB7BD251A2233F4001FBE3E /* CYLSNSCodeButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7BD241A2233F4001FBE3E /* CYLSNSCodeButtonViewController.m */; };
-		9AB7BD281A2235E6001FBE3E /* UIImage+ResizeImg.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7BD271A2235E6001FBE3E /* UIImage+ResizeImg.m */; };
-		9AB7BD2E1A223E65001FBE3E /* SNSCodeCountdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7BD2D1A223E65001FBE3E /* SNSCodeCountdownButton.m */; };
+		9AB7C0111B2233D4001FBE3E /* CYLAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7C0011B2233D4001FBE3E /* CYLAppDelegate.swift */; };
+		9AB7C0121B2233D4001FBE3E /* CYLSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7C0021B2233D4001FBE3E /* CYLSceneDelegate.swift */; };
+		9AB7C0131B2233D4001FBE3E /* CYLSNSCodeButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7C0031B2233D4001FBE3E /* CYLSNSCodeButtonViewController.swift */; };
+		9AB7C0141B2233D4001FBE3E /* CYLLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7C0041B2233D4001FBE3E /* CYLLocalization.swift */; };
+		9AB7C0151B2233D4001FBE3E /* SNSCodeTimerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7C0051B2233D4001FBE3E /* SNSCodeTimerDemoTests.swift */; };
+		9AB7C0161B2233D4001FBE3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB7C0061B2233D4001FBE3E /* LaunchScreen.storyboard */; };
+		9AB7C0171B2233D4001FBE3E /* CYLSMSCode.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AB7C0081B2233D4001FBE3E /* CYLSMSCode.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,22 +42,20 @@
 		9AB7BCF81A2233D4001FBE3E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9AB7BCFC1A2233D4001FBE3E /* SNSCodeTimerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SNSCodeTimerDemo-Info.plist"; sourceTree = "<group>"; };
 		9AB7BCFE1A2233D4001FBE3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9AB7BD001A2233D4001FBE3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9AB7BD021A2233D4001FBE3E /* SNSCodeTimerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SNSCodeTimerDemo-Prefix.pch"; sourceTree = "<group>"; };
-		9AB7BD031A2233D4001FBE3E /* CYLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLAppDelegate.h; sourceTree = "<group>"; };
-		9AB7BD041A2233D4001FBE3E /* CYLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLAppDelegate.m; sourceTree = "<group>"; };
 		9AB7BD061A2233D4001FBE3E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9AB7BD0C1A2233D4001FBE3E /* SNSCodeTimerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNSCodeTimerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB7BD0D1A2233D4001FBE3E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9AB7BD151A2233D4001FBE3E /* SNSCodeTimerDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SNSCodeTimerDemoTests-Info.plist"; sourceTree = "<group>"; };
 		9AB7BD171A2233D4001FBE3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9AB7BD191A2233D4001FBE3E /* SNSCodeTimerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNSCodeTimerDemoTests.m; sourceTree = "<group>"; };
-		9AB7BD231A2233F4001FBE3E /* CYLSNSCodeButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLSNSCodeButtonViewController.h; sourceTree = "<group>"; };
-		9AB7BD241A2233F4001FBE3E /* CYLSNSCodeButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLSNSCodeButtonViewController.m; sourceTree = "<group>"; };
-		9AB7BD261A2235E6001FBE3E /* UIImage+ResizeImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeImg.h"; sourceTree = "<group>"; };
-		9AB7BD271A2235E6001FBE3E /* UIImage+ResizeImg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeImg.m"; sourceTree = "<group>"; };
-		9AB7BD2C1A223E65001FBE3E /* SNSCodeCountdownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSCodeCountdownButton.h; sourceTree = "<group>"; };
-		9AB7BD2D1A223E65001FBE3E /* SNSCodeCountdownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSCodeCountdownButton.m; sourceTree = "<group>"; };
+		9AB7C0011B2233D4001FBE3E /* CYLAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CYLAppDelegate.swift; sourceTree = "<group>"; };
+		9AB7C0021B2233D4001FBE3E /* CYLSceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CYLSceneDelegate.swift; sourceTree = "<group>"; };
+		9AB7C0031B2233D4001FBE3E /* CYLSNSCodeButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CYLSNSCodeButtonViewController.swift; sourceTree = "<group>"; };
+		9AB7C0041B2233D4001FBE3E /* CYLLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CYLLocalization.swift; sourceTree = "<group>"; };
+		9AB7C0051B2233D4001FBE3E /* SNSCodeTimerDemoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSCodeTimerDemoTests.swift; sourceTree = "<group>"; };
+		9AB7C0071B2233D4001FBE3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9AB7C0091B2233D4001FBE3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en"; path = "en.lproj/CYLSMSCode.strings"; sourceTree = "<group>"; };
+		9AB7C00A1B2233D4001FBE3E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/CYLSMSCode.strings"; sourceTree = "<group>"; };
+		9AB7C00B1B2233D4001FBE3E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,14 +115,12 @@
 		9AB7BCFA1A2233D4001FBE3E /* SNSCodeTimerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				9AB7BD031A2233D4001FBE3E /* CYLAppDelegate.h */,
-				9AB7BD041A2233D4001FBE3E /* CYLAppDelegate.m */,
-				9AB7BD231A2233F4001FBE3E /* CYLSNSCodeButtonViewController.h */,
-				9AB7BD241A2233F4001FBE3E /* CYLSNSCodeButtonViewController.m */,
-				9AB7BD2C1A223E65001FBE3E /* SNSCodeCountdownButton.h */,
-				9AB7BD2D1A223E65001FBE3E /* SNSCodeCountdownButton.m */,
-				9AB7BD261A2235E6001FBE3E /* UIImage+ResizeImg.h */,
-				9AB7BD271A2235E6001FBE3E /* UIImage+ResizeImg.m */,
+				9AB7C0011B2233D4001FBE3E /* CYLAppDelegate.swift */,
+				9AB7C0021B2233D4001FBE3E /* CYLSceneDelegate.swift */,
+				9AB7C0031B2233D4001FBE3E /* CYLSNSCodeButtonViewController.swift */,
+				9AB7C0041B2233D4001FBE3E /* CYLLocalization.swift */,
+				9AB7C0061B2233D4001FBE3E /* LaunchScreen.storyboard */,
+				9AB7C0081B2233D4001FBE3E /* CYLSMSCode.strings */,
 				9AB7BD061A2233D4001FBE3E /* Images.xcassets */,
 				9AB7BCFB1A2233D4001FBE3E /* Supporting Files */,
 			);
@@ -135,8 +132,6 @@
 			children = (
 				9AB7BCFC1A2233D4001FBE3E /* SNSCodeTimerDemo-Info.plist */,
 				9AB7BCFD1A2233D4001FBE3E /* InfoPlist.strings */,
-				9AB7BD001A2233D4001FBE3E /* main.m */,
-				9AB7BD021A2233D4001FBE3E /* SNSCodeTimerDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -144,7 +139,7 @@
 		9AB7BD131A2233D4001FBE3E /* SNSCodeTimerDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				9AB7BD191A2233D4001FBE3E /* SNSCodeTimerDemoTests.m */,
+				9AB7C0051B2233D4001FBE3E /* SNSCodeTimerDemoTests.swift */,
 				9AB7BD141A2233D4001FBE3E /* Supporting Files */,
 			);
 			path = SNSCodeTimerDemoTests;
@@ -218,6 +213,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
+				"zh-Hans",
 			);
 			mainGroup = 9AB7BCE81A2233D4001FBE3E;
 			productRefGroup = 9AB7BCF21A2233D4001FBE3E /* Products */;
@@ -236,6 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AB7BCFF1A2233D4001FBE3E /* InfoPlist.strings in Resources */,
+				9AB7C0161B2233D4001FBE3E /* LaunchScreen.storyboard in Resources */,
+				9AB7C0171B2233D4001FBE3E /* CYLSMSCode.strings in Resources */,
 				9AB7BD071A2233D4001FBE3E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,11 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AB7BD011A2233D4001FBE3E /* main.m in Sources */,
-				9AB7BD051A2233D4001FBE3E /* CYLAppDelegate.m in Sources */,
-				9AB7BD251A2233F4001FBE3E /* CYLSNSCodeButtonViewController.m in Sources */,
-				9AB7BD2E1A223E65001FBE3E /* SNSCodeCountdownButton.m in Sources */,
-				9AB7BD281A2235E6001FBE3E /* UIImage+ResizeImg.m in Sources */,
+				9AB7C0111B2233D4001FBE3E /* CYLAppDelegate.swift in Sources */,
+				9AB7C0121B2233D4001FBE3E /* CYLSceneDelegate.swift in Sources */,
+				9AB7C0131B2233D4001FBE3E /* CYLSNSCodeButtonViewController.swift in Sources */,
+				9AB7C0141B2233D4001FBE3E /* CYLLocalization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AB7BD1A1A2233D4001FBE3E /* SNSCodeTimerDemoTests.m in Sources */,
+				9AB7C0151B2233D4001FBE3E /* SNSCodeTimerDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +284,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9AB7BCFE1A2233D4001FBE3E /* en */,
+				9AB7C00B1B2233D4001FBE3E /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -296,6 +295,23 @@
 				9AB7BD171A2233D4001FBE3E /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9AB7C0061B2233D4001FBE3E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AB7C0071B2233D4001FBE3E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9AB7C0081B2233D4001FBE3E /* CYLSMSCode.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AB7C0091B2233D4001FBE3E /* en */,
+				9AB7C00A1B2233D4001FBE3E /* zh-Hans */,
+			);
+			name = CYLSMSCode.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -333,7 +349,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				ENABLE_TESTABILITY = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -366,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -377,10 +394,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SNSCodeTimerDemo/SNSCodeTimerDemo-Prefix.pch";
+				SWIFT_VERSION = 5.0;
 				INFOPLIST_FILE = "SNSCodeTimerDemo/SNSCodeTimerDemo-Info.plist";
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -390,10 +406,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SNSCodeTimerDemo/SNSCodeTimerDemo-Prefix.pch";
+				SWIFT_VERSION = 5.0;
 				INFOPLIST_FILE = "SNSCodeTimerDemo/SNSCodeTimerDemo-Info.plist";
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -408,8 +423,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SNSCodeTimerDemo/SNSCodeTimerDemo-Prefix.pch";
+				SWIFT_VERSION = 5.0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -430,8 +444,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SNSCodeTimerDemo/SNSCodeTimerDemo-Prefix.pch";
+				SWIFT_VERSION = 5.0;
 				INFOPLIST_FILE = "SNSCodeTimerDemoTests/SNSCodeTimerDemoTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";

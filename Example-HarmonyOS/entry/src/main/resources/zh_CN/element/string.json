@@ -1,0 +1,12 @@
+{
+  "string": [
+    { "name": "app_name", "value": "SMSCodeButton" },
+    { "name": "module_desc", "value": "SMSCodeButton 示例" },
+    { "name": "ability_desc", "value": "SMSCodeButton 示例" },
+    { "name": "cyl_sms_get_code", "value": "获取验证码" },
+    { "name": "cyl_sms_seconds_left", "value": "还剩%d秒" },
+    { "name": "cyl_sms_resend", "value": "重新获取" },
+    { "name": "cyl_sms_sending_code", "value": "发送验证码" },
+    { "name": "cyl_sms_button_hint", "value": "通过短信发送验证码" }
+  ]
+}
