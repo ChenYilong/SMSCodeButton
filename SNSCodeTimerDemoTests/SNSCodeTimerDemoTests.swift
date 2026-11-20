@@ -26,6 +26,19 @@ final class SNSCodeTimerDemoTests: XCTestCase {
         super.tearDown()
     }
 
+    /**
+     * [EN] A tap: runs the actions the button registered for `.touchUpInside`; `sendActions(for:)` does nothing for a control
+     *      that is not in a window (CI).
+     * [CN] 点击：执行按钮为 `.touchUpInside` 注册的动作；控件不在 window 中时 `sendActions(for:)` 什么也不做（CI）。
+     */
+    private func tap(_ button: UIControl) {
+        for target in button.allTargets {
+            for action in button.actions(forTarget: target, forControlEvent: .touchUpInside) ?? [] {
+                _ = (target as AnyObject).perform(Selector(action))
+            }
+        }
+    }
+
     private func makeController() -> CYLSNSCodeButtonViewController {
         let controller = CYLSNSCodeButtonViewController()
         controller.loadViewIfNeeded()
@@ -46,7 +59,7 @@ final class SNSCodeTimerDemoTests: XCTestCase {
 
     func testATapStartsTheCountdownAndTheTimeInTheBackgroundCounts() {
         let button = makeController().sendButton
-        button.sendActions(for: .touchUpInside)
+        tap(button)
         XCTAssertEqual(button.countdownState, .running)
         XCTAssertFalse(button.isEnabled)
         XCTAssertEqual(button.title, String(format: cylLocalizedString("还剩%ld秒"), 60))
@@ -71,7 +84,7 @@ final class SNSCodeTimerDemoTests: XCTestCase {
      */
     func testAPastClockClosesTheCountdownAndARestartTakesItUpAgain() {
         let button = makeController().sendButton
-        button.sendActions(for: .touchUpInside)
+        tap(button)
 
         // [EN] A new controller, as after the app was ended in the background: the countdown continues. [CN] 新的控制器，相当于 App 在后台被结束后重启：倒计时继续。
         now = now.addingTimeInterval(20)
