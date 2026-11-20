@@ -20,6 +20,12 @@ import CYLAnimatedItem
 final class SNSCodeTimerDemoTests: XCTestCase {
     private var now = Date(timeIntervalSince1970: 1_000)
 
+    override func tearDown() {
+        // [EN] The countdown is cached: a test must not leave one for the next. [CN] 倒计时会被缓存：测试不能给下一个测试留下倒计时。
+        makeController().sendButton.resetCountdown()
+        super.tearDown()
+    }
+
     private func makeController() -> CYLSNSCodeButtonViewController {
         let controller = CYLSNSCodeButtonViewController()
         controller.loadViewIfNeeded()
@@ -56,5 +62,26 @@ final class SNSCodeTimerDemoTests: XCTestCase {
         XCTAssertEqual(button.countdownState, .finished)
         XCTAssertTrue(button.isEnabled)
         XCTAssertEqual(button.title, cylLocalizedString("重新获取"))
+    }
+
+    /**
+     * [EN] The owner's rule on issue #1: a clock past the longest duration closes the countdown and the button can be tapped
+     *      again; a restart takes a cached countdown up again.
+     * [CN] 所有者对 issue #1 的要求：本地时钟超过最长时长时关闭倒计时，按钮可再次点击；重启后接续缓存的倒计时。
+     */
+    func testAPastClockClosesTheCountdownAndARestartTakesItUpAgain() {
+        let button = makeController().sendButton
+        button.sendActions(for: .touchUpInside)
+
+        // [EN] A new controller, as after the app was ended in the background: the countdown continues. [CN] 新的控制器，相当于 App 在后台被结束后重启：倒计时继续。
+        now = now.addingTimeInterval(20)
+        let restarted = makeController().sendButton
+        XCTAssertEqual(restarted.countdownState, .running)
+        XCTAssertEqual(restarted.title, String(format: cylLocalizedString("还剩%ld秒"), 40))
+
+        now = now.addingTimeInterval(100_000)
+        restarted.refreshCountdown()
+        XCTAssertEqual(restarted.countdownState, .finished)
+        XCTAssertTrue(restarted.isEnabled)
     }
 }

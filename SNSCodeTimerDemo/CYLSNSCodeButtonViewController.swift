@@ -17,6 +17,9 @@ import CYLAnimatedItem
  *      宽度、无障碍）都在该组件中；本页面只设置文本与图标，点击时开始倒计时并发送验证码。
  */
 final class CYLSNSCodeButtonViewController: UIViewController, CYLAnimatedItemViewDelegate {
+    /** [EN] The cache key of the countdown. [CN] 倒计时的缓存 key。 */
+    static let countdownCacheKey = "cyl-sms-code"
+
     /** [EN] The button. [CN] 按钮。 */
     let sendButton = CYLAnimatedItemView(frame: .zero)
 
@@ -36,6 +39,10 @@ final class CYLSNSCodeButtonViewController: UIViewController, CYLAnimatedItemVie
         sendButton.countdownRunningTitleColor = .label
         sendButton.countdownDuration = 60
         sendButton.startsCountdownOnTap = true
+        // [EN] Keeps the countdown, so it continues after the app was ended in the background or quit and started again.
+        //      One key per thing counted: use one per phone number in a real app.
+        // [CN] 保存倒计时，使其在 App 于后台被结束或退出后再次启动时继续。每个被计时的对象一个 key：真实 App 中每个手机号一个。
+        sendButton.countdownCacheKey = CYLSNSCodeButtonViewController.countdownCacheKey
         sendButton.delegate = self
         sendButton.accessibilityIdentifier = "cyl-sms-code-button"
         sendButton.translatesAutoresizingMaskIntoConstraints = false
