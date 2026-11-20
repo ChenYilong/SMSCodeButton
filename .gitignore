@@ -1,0 +1,10 @@
+# macOS AppleDouble files and Finder metadata
+._*
+.DS_Store
+# CocoaPods: the sources are fetched by `pod install`; lock files are never committed
+Pods/
+*.lock
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
