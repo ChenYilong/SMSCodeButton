@@ -51,6 +51,7 @@ Every new feature and user-visible change ships with bilingual documentation in 
 
 ## Code rules
 
+- **All new code is Swift, here and in the component (owner, 2026-11-20).** `CYLAnimatedItemView` is Swift (`CYLAnimatedItem/Swift/CYLAnimatedItemView.swift` in CYLTabBarController, on `feat/cross-platform-components` and branches from it); add component features there, never in an Objective-C file. Before editing the component, check which branch holds its Swift version (`git ls-tree -r --name-only <branch> | grep CYLAnimatedItemView`).
 - **Pure Swift.** No Objective-C, no bridging header, no `.m` / `.h` in the app and its tests. Swift 5 language mode
   (`SWIFT_VERSION = 5.0`; `ENV['SWIFT_VERSION'] = '5'` in the Podfile). Public and internal declarations use Swift Markup
   documentation comments (`/** … */`), bilingual.

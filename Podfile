@@ -13,7 +13,7 @@ project 'SNSCodeTimerDemo.xcodeproj'
 target 'SNSCodeTimerDemo' do
   use_frameworks!
 
-  pod 'CYLAnimatedItem', :git => 'https://github.com/ChenYilong/CYLTabBarController.git', :commit => '97f167b97b41b8553450af9a2e50188302b9f7ea'
+  pod 'CYLAnimatedItem', :git => 'https://github.com/ChenYilong/CYLTabBarController.git', :commit => 'e7053169775900b7251da07d88e8c1b2bea5f9e7'
 
   target 'SNSCodeTimerDemoTests' do
     inherit! :search_paths
