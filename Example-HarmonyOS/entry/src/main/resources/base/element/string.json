@@ -1,0 +1,12 @@
+{
+  "string": [
+    { "name": "app_name", "value": "SMSCodeButton" },
+    { "name": "module_desc", "value": "SMSCodeButton example" },
+    { "name": "ability_desc", "value": "SMSCodeButton example" },
+    { "name": "cyl_sms_get_code", "value": "Get code" },
+    { "name": "cyl_sms_seconds_left", "value": "%d s left" },
+    { "name": "cyl_sms_resend", "value": "Resend" },
+    { "name": "cyl_sms_sending_code", "value": "Sending the code" },
+    { "name": "cyl_sms_button_hint", "value": "Sends a verification code by SMS" }
+  ]
+}

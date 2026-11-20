@@ -25,3 +25,15 @@ Podfile pins). Guide: `docs/Animated-Item.md`, "Countdown style", in that reposi
 
 Not here: anything about animations (Lottie, PAG, Rive, GIF, SVGA): this app adds only `CYLAnimatedItem` Core, so images are static.
 If a needed API is missing, add it to the component (AGENTS.md, "Depending on CYLAnimatedItem"), not to this app.
+
+## The same API on the other platforms
+
+| iOS (Swift) | Android (Kotlin) | HarmonyOS (ArkTS) | Mini program |
+|:---|:---|:---|:---|
+| `style = .countdown` | `style = CYLAnimatedItemStyle.Countdown` | `itemStyle: CYLAnimatedItemStyle.Countdown` | `item-style="countdown"` |
+| `countdownIdleTitle`, `countdownRunningTitleFormat`, `countdownFinishedTitle` | same names | `countdownIdleTitle`, `countdownRunningTitleFormat`, `countdownFinishedTitle` props | `countdown-idle-title`, `countdown-running-title-format`, `countdown-finished-title` |
+| `image`, `countdownImage` | `image`, `countdownImage` (`Drawable`) | `image`, `countdownImage` (`ResourceStr`) | `image`, `countdown-image` |
+| `startsCountdownOnTap`, `countdownCacheKey`, `countdownDuration` | same names | same names (props) | `starts-countdown-on-tap`, `countdown-cache-key`, `countdown-duration` |
+| `startCountdown()`, `startCountdown(withDuration:)`, `resetCountdown()` | `startCountdown(durationSeconds)`, `resetCountdown()` | `controller.startCountdown(seconds)`, `controller.resetCountdown()` | `startCountdown(seconds)`, `resetCountdown()` |
+| delegate `animatedItemViewDidTap` etc. | `CYLAnimatedItemGestureListener.onItemTapped`, `onCountdown…` | `onItemTap`, `onCountdownStart`, `onCountdownTick`, `onCountdownFinish` | events `itemtap`, `countdownstart`, `countdowntick`, `countdownfinish` |
+| `countdownDateProvider` (tests) | `countdownClock` | `countdownClock` | the page's `Date.now` (tests replace it) |

@@ -1,0 +1,18 @@
+<!-- [EN] One "Get code" button in the middle: cyl-animated-item in its countdown style. [CN] 中间一个「获取验证码」按钮：倒计时样式的 cyl-animated-item。 -->
+<view class="cyl-sms-page">
+  <cyl-animated-item
+    id="cyl-sms-code-button"
+    item-style="countdown"
+    image="/images/cyl_sms_envelope.png"
+    countdown-image="/images/cyl_sms_clock.png"
+    countdown-idle-title="{{texts.getCode}}"
+    countdown-running-title-format="{{texts.secondsLeft}}"
+    countdown-finished-title="{{texts.resend}}"
+    countdown-running-title-color="#000000"
+    title-color="#000000"
+    countdown-duration="{{60}}"
+    starts-countdown-on-tap="{{true}}"
+    countdown-cache-key="cyl-sms-code"
+    bind:itemtap="onGetCode"
+  />
+</view>

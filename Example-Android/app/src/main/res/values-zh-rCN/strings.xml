@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- [EN] Simplified Chinese texts of the example. [CN] 示例的简体中文文本。 -->
+<resources>
+    <string name="app_name">SMSCodeButton</string>
+    <string name="cyl_sms_get_code">获取验证码</string>
+    <string name="cyl_sms_seconds_left">还剩%d秒</string>
+    <string name="cyl_sms_resend">重新获取</string>
+    <string name="cyl_sms_sending_code">发送验证码</string>
+</resources>

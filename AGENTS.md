@@ -6,7 +6,7 @@ in the `CYLAnimatedItem` pod of [CYLTabBarController](https://github.com/ChenYil
 only configures it. These rules are adapted from CYLTabBarController's `AGENTS.md`; where the two differ, this file wins here.
 
 - `README.md`: usage for app developers. `docs/`: one document per feature (start with [docs/Countdown-Button.md](docs/Countdown-Button.md)).
-- `SNSCodeTimerDemo/`: the app (Swift). `SNSCodeTimerDemoTests/`: its tests.
+- `SNSCodeTimerDemo/`: the iOS app (Swift). `SNSCodeTimerDemoTests/`: its tests. `Example-Android/`, `Example-HarmonyOS/`, `Example-MiniProgram/`: the other platforms.
 
 When code, `docs/` and `README.md` disagree, code wins, then `docs/`. Fix the wrong one in the same change, then the skill that repeats it.
 
@@ -96,6 +96,29 @@ The Podfile always uses the **latest commit of CYLTabBarController**, which can 
 4. A feature this app needs that the component lacks is added to the component (in CYLTabBarController, on its own branch, with
    its tests and documents), pushed, and then pinned here. Do not wait for a release.
 
+## Platform examples (Android, HarmonyOS, WeChat Mini Program)
+
+Besides the iOS app, the repository has an example for every platform that has the countdown style of `CYLAnimatedItemView`
+(added 2026-11-20): `Example-Android` (Kotlin), `Example-HarmonyOS` (ArkTS), `Example-MiniProgram` (JavaScript). Each has the
+same one-button page, the same texts (English and Simplified Chinese), the same icons (`assets/`), a stable id for tests
+(`cyl-sms-code-button`) and tests. The rules of this file apply to each in its own language: the core is the component, never
+copied; texts through the platform's resource files (Android `strings.xml`, HarmonyOS `string.json`, the mini program's
+`utils/cyl_sms_texts.js`), no Chinese literal elsewhere; accessibility through the component; bilingual comments.
+
+- **One commit for every platform: `CYL_COMMIT`.** iOS pins it in the Podfile; the other three build against the components that
+  `scripts/sync-cyl-components.sh` fetches at that commit (`.cyl-components/`, and copies in the HarmonyOS and mini program
+  examples; all ignored by git). Run the sync after every repin and before every build of them.
+- **Repin** with `scripts/repin-cyl-commit.sh` (the newest commit on any branch by default; or a given sha). It writes `CYL_COMMIT`,
+  the Podfile and the README. Then `pod install` on iOS and the sync for the rest.
+- **The newest commit must contain the countdown style.** When another branch of CYLTabBarController is newer than the countdown
+  branch and lacks the style, merge it into the countdown branch, push, and pin the merge commit (never an older one, and never a
+  commit without the style: the sync script refuses it).
+- **Never copy the component** into an example; a feature an example needs is added to the component of that platform (in
+  CYLTabBarController, with its tests and documents), pushed, and pinned here. A new platform example needs the component's
+  countdown style on that platform first.
+- Icons from the iOS xcassets are converted with `scripts/convert-ios-png.py` (their `CgBI` PNGs are unreadable elsewhere).
+- Verify each example with its own tools (`cyl-verify`) and say what could not be verified.
+
 ## Xcode project
 
 - **Top of the Podfile**: `platform :ios, '15.0'`, `ENV['SWIFT_VERSION'] = '5'`, `project 'SNSCodeTimerDemo.xcodeproj'`.
@@ -150,6 +173,10 @@ The Podfile always uses the **latest commit of CYLTabBarController**, which can 
 
 ```sh
 scripts/latest-cyl-commit.sh                 # the newest CYLTabBarController commit, any branch
+scripts/repin-cyl-commit.sh                  # repin every platform (CYL_COMMIT, Podfile, README)
+scripts/sync-cyl-components.sh               # components at CYL_COMMIT for Android, HarmonyOS and the mini program
+(cd Example-MiniProgram && npm test)         # the mini program example's tests
+(cd Example-Android && gradle :app:testDebugUnitTest)
 pod install                                  # after changing the commit in the Podfile
 xcodebuild -workspace SNSCodeTimerDemo.xcworkspace -scheme SNSCodeTimerDemo -destination 'platform=iOS Simulator,name=iPhone 17 Pro' -derivedDataPath "$(mktemp -d)" test
 ```

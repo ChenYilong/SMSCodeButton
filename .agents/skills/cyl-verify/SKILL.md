@@ -35,3 +35,18 @@ Write that in the report and the commit's TODO, and leave the checks above to a 
 ## Where a check ran
 
 Name it in every report: GitHub CI (runner) or locally (macOS and Xcode versions). Screenshots follow `cyl-docs`.
+
+## The other platforms
+
+Before every build of `Example-Android`, `Example-HarmonyOS` or `Example-MiniProgram`: `scripts/latest-cyl-commit.sh`, repin if newer
+(`scripts/repin-cyl-commit.sh`; the newest commit must contain the countdown style), then `scripts/sync-cyl-components.sh`.
+
+| Platform | Check |
+|:---|:---|
+| Mini program | `cd Example-MiniProgram && npm run setup && npm test` (Node 22; the page against the real component); then the WeChat developer tools and a device |
+| Android | `cd Example-Android && gradle :app:testDebugUnitTest` (Robolectric), then `gradle :app:installDebug` on an emulator; find the button by its tag `cyl-sms-code-button` (`uiautomator`) |
+| HarmonyOS | DevEco Studio or `hvigorw assembleHap`, then the emulator (unsigned HAP, `hdc install -r`); find the button by id `cyl-sms-code-button` (`hdc shell uitest`) |
+
+On each: tap, watch "N s left" and the clock icon, background the app for a known time and return (issue #1), kill the process and
+start again within the countdown (the cache), set the system clock far forward and back. A Linux cloud session can run only the mini
+program tests and the sync scripts: say so in the report.

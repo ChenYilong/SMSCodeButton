@@ -23,3 +23,17 @@ Follow this order; `AGENTS.md` has the reasons.
    Auto Layout (it has an intrinsic size). No logic of the component is repeated here (`cyl-api-map`).
 7. **Tests** in `SNSCodeTimerDemoTests` (`@testable import SNSCodeTimerDemo`): move the component's clock, never sleep.
 8. **Docs**: a TODO entry first, then the feature document and the README (`cyl-docs`); then `cyl-verify`.
+
+## Another platform
+
+The example of Android, HarmonyOS or the WeChat Mini Program (`Example-Android`, `Example-HarmonyOS`, `Example-MiniProgram`) follows
+the same order, with the platform's own files:
+
+1. The platform's component must have the countdown style at the commit in `CYL_COMMIT` (`scripts/sync-cyl-components.sh` checks it).
+2. Layout: Android a Gradle project (`:app` and `:cylanimateditem` from `.cyl-components`, a `libs.versions.toml` with the module's
+   aliases); HarmonyOS a hvigor project (`entry` depending on the copied `cylanimateditem` by `file:`); the mini program
+   `miniprogram/` with the component copied to `miniprogram/cyl/`.
+3. The page: one component with `style` / `itemStyle` = countdown, the three texts from the platform's resources, the two icons,
+   `startsCountdownOnTap`, a cache key, a stable id (`cyl-sms-code-button`), and the send call in the tap callback.
+4. Texts in English and Simplified Chinese through the platform's resource files; the icons from `assets/`.
+5. Tests that move the component's clock (Robolectric, Node), never sleep. Docs and README rows (`cyl-docs`).

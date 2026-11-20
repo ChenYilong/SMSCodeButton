@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "cyl-animated-item": "../../cyl/cyl-animated-item/index"
+  },
+  "navigationBarTitleText": "SMSCodeButton"
+}
