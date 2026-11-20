@@ -10,7 +10,7 @@
 
 ```ruby
 # Podfile: the latest commit of CYLTabBarController (scripts/latest-cyl-commit.sh --podfile)
-pod 'CYLAnimatedItem', :git => 'https://github.com/ChenYilong/CYLTabBarController.git', :commit => 'c6b4afded3a6a8a73a8ce718d5cdd1d7223bc7ec'
+pod 'CYLAnimatedItem', :git => 'https://github.com/ChenYilong/CYLTabBarController.git', :commit => 'd5de50085952c7c5559372b1e49e7b6c7f2b2f07'
 ```
 
 ```swift
